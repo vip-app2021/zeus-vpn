@@ -17,6 +17,9 @@ te dejare cada forma para agregar payload, hos sni ssl, metodos con prroxy y agr
     
     nota es importante copiarlo desde el corchettte hasta el final de corchete mas una coma en caso que siga otra implementacion {},
     
+    la actualizacion siempe 
+    "Version": "1.1",debe ser mayor a la anterior 
+    
     2# implementar metodo ssl
     # la opcion frente a ssl devera ser true
     
