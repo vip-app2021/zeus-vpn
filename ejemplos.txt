@@ -1,0 +1,69 @@
+esta es la forma en qeue trabajaras
+te dejare cada forma para agregar payload, hos sni ssl, metodos con prroxy y agregar vps ya sea ip numerica o host y agregar mensaje de actualizacion
+#######################################################################################################
+
+1# agregar vps ip numerica o host dominio
+# solo reemplazae valores que estan dentro de las comillas("")
+# los puertos se modifican a segun como tengas configurada tu vps
+
+        {
+        "Name": "nombre servidor",
+        "SSHHost": "aqui tu host vps",
+        "SSHPort": "22",
+        "DropBear": "80",
+        "SSLPort": "443",
+        "ProxyPort": "8080"
+    },
+    
+    nota es importante copiarlo desde el corchettte hasta el final de corchete mas una coma en caso que siga otra implementacion {},
+    
+    2# implementar metodo ssl
+    # la opcion frente a ssl devera ser true
+    
+   los metodos son implementaciones distintas y ban sebajo de tweam
+   #####metodo  ssl##
+   {
+"Name": "🇨🇴 Avantel ssl🇨🇴",
+"Direct": false,
+"SSL": true,
+"Payload": "www.gov.co",
+"CustomProxy": false,
+"ProxyHost": "",
+"ProxyPort": ""
+},
+
+
+metodo payload sin proxy
+
+{
+"Name": "🇺🇾 Movistar",
+"SSL": false,
+"Direct": true,
+"Payload": "GET http://www.skynet.com HTTP/1.1
+Host: www.skynet.com
+User-Agent: Yes
+Connection: close
+Proxy-Connection: Keep-Alive
+[crlf][crlf][netData][crlf] [crlf][crlf]",
+"CustomProxy": false,
+"ProxyHost": "",
+"ProxyPort": ""
+  }
+  
+  
+  metodo payload con proxy
+  
+  {
+"Name": "🇺🇾 Movistar",
+"SSL": false,
+"Direct": true,
+"Payload": "GET http://www.skynet.com HTTP/1.1
+Host: www.skynet.com
+User-Agent: Yes
+Connection: close
+Proxy-Connection: Keep-Alive
+[crlf][crlf][netData][crlf] [crlf][crlf]",
+"CustomProxy": true,
+"ProxyHost": "host proxy",
+"ProxyPort": "puertoproxy"
+  }
