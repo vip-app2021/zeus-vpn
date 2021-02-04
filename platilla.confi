@@ -1,28 +1,17 @@
 {
-    "Version": "1.1",
+    "Version": "1.3",
     "Message": "NUEVAS PROMOS ACTUALIZADOS
-🇨🇴 movistar sin redes - avantel 4g - etb-  redes
-🇲🇽 vigin - att - movistar - tekcel - etc
-🇵🇪 bitel - entel - claro 
-🇧🇴 entel - viva titok 
-🇺🇾 movistar - personal
-🇪🇨 tuenty - ctn
-🇬🇹 tigo movistar :)",
+🇨🇴 movistar con redes - avantel 4g
+disfruta de nuestro servicio sin restricciones!!
+ :)",
     "Servers":[{
-        "Name": "1🇬🇧 londres free",
-        "SSHHost": "londres.networkvpn.ml",
+        "Name": "mi servidor ",
+        "SSHHost": "servidor",
         "SSHPort": "22",
         "DropBear": "80",
         "SSLPort": "443",
         "ProxyPort": "8080"
-    },{
-"Name": "2🇺🇸 dallas vip",
-"SSHHost": "dallas-vip.networkvpn.ml",
-"SSHPort": "22",
-"DropBear": "80",
-"SSLPort": "443",
-"ProxyPort": "8080"
-}],
+    }],
 "Tweaks": [{
 "Name": "🇨🇴 Avantel ssl🇨🇴",
 "Direct": false,
@@ -31,17 +20,12 @@
 "CustomProxy": false,
 "ProxyHost": "",
 "ProxyPort": ""
-},
+  },
 {
-"Name": "🇺🇾 Movistar",
-"SSL": false,
-"Direct": true,
-"Payload": "GET http://www.skynet.com HTTP/1.1
-Host: www.skynet.com
-User-Agent: Yes
-Connection: close
-Proxy-Connection: Keep-Alive
-[crlf][crlf][netData][crlf] [crlf][crlf]",
+"Name": "🇨🇴 Movistar ssl🇨🇴",
+"Direct": false,
+"SSL": true,
+"Payload": "whatsapp.net",
 "CustomProxy": false,
 "ProxyHost": "",
 "ProxyPort": ""
