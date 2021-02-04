@@ -6,7 +6,7 @@ disfruta de nuestro servicio sin restricciones!!
  :)",
     "Servers":[{
         "Name": "mi servidor ",
-        "SSHHost": "servidor",
+        "SSHHost": "140.82.42.201",
         "SSHPort": "22",
         "DropBear": "80",
         "SSLPort": "443",
